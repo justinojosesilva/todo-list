@@ -1,0 +1,84 @@
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 1.6rem;
+
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+
+  padding: 1.6rem;
+  background: var(--gray-500);
+  color: var(--gray-100);
+
+  margin-bottom: 1.2rem;
+}
+
+.item p {
+  width: 100%;
+}
+
+.item p s {
+  color: var(--gray-300);
+}
+
+.item button {
+  background: transparent;
+  color: var(--gray-300);
+  border: none;
+  cursor: pointer;
+  transition: color 0.1s;
+}
+
+.item button svg:hover {
+  color: var(--danger);
+}
+
+.checkboxWrapper label {
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #4E4958;
+}
+
+
+.checkboxWrapper {
+  position: relative;
+}
+
+.checkboxWrapper label{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0; 
+}
+
+.checkboxWrapper input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px; 
+
+  opacity: 0;
+}
+
+.checkboxWrapper label::before {
+  content: '';
+  width: 14px;
+  height: 14px; 
+  display: block;
+  border: 1px solid #4E4958;
+  border-radius: 50px;
+}
+
+.checkboxWrapper input:checked + label::before {
+  background: var(--purple);
+  background-image: url("data:image/svg+xml,%3Csvg width='9' height='7' viewBox='0 0 9 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.93059 0.342093L3.59865 4.67403L1.11618 2.19156L0.280273 3.02747L3.59865 6.34584L8.76649 1.178L7.93059 0.342093Z' fill='%23F2F2F2'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkboxWrapper input:focus + label::before {
+  outline: 2px solid var(--purple);
+}

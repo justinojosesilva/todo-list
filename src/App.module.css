@@ -1,0 +1,89 @@
+.wrapper {
+  max-width: 73.6rem;
+  margin: 0 auto;
+}
+
+.newItem {
+  width: 100%;
+  display: flex;
+  gap: 0.8rem;
+
+  margin-top: -2.7rem;
+}
+
+.newItem > input {
+  height: 5.4rem;
+  width: 100%;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  padding: 1.6rem;
+
+  font-size: 1.6rem;
+  line-height: 140;
+  color: var(--gray-300);
+}
+
+.newItem > input:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--purple-dark) ;
+  color: var(--gray-100);
+}
+
+.newItem > button {
+  width: 9rem;
+  height: 5.2rem;
+  border-radius: 8px;
+  background: var(--blue-dark);
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .8rem;
+
+  color: var(--gray-100);
+  font-size: 1.4rem;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  padding: 1.6rem;
+
+  transition: background 0.2s;
+}
+
+.newItem > button:hover {
+  background: var(--blue);
+}
+
+.score {
+  margin-top: 6.4rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+
+.score div {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:.8rem;
+}
+
+.score div + div { 
+  color: var(--purple)
+}
+
+.score > div > span {
+  background: var(--gray-400);
+  padding: 0.2rem 0.8rem;
+  border-radius: 99px;
+
+  font-size: 1.2rem;
+  color: var(--gray-200);
+} 
+
